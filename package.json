@@ -1,0 +1,22 @@
+{
+  "name": "savvy-designs",
+  "version": "1.0.0",
+  "description": "Interior Design template",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SIabo13/Savvy-Designs.git"
+  },
+  "author": "Raul Rodriguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SIabo13/Savvy-Designs/issues"
+  },
+  "homepage": "https://github.com/SIabo13/Savvy-Designs#readme",
+  "dependencies": {
+    "sass": "^1.26.8"
+  }
+}

@@ -22,12 +22,6 @@
     <link rel="stylesheet" href="<?php echo $pageStyle ?>assets/css/Footer-Dark.css">
     <link rel="stylesheet" href="<?php echo $pageStyle ?>https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="<?php echo $pageStyle ?>https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
-    <link rel="stylesheet" href="<?php echo $pageStyle ?>assets/css/Lightbox-Gallery.css">
-    <link rel="stylesheet" href="<?php echo $pageStyle ?>assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="<?php echo $pageStyle ?>assets/css/styles.css">
-    <link rel="stylesheet" href="<?php echo $pageStyle ?>assets/css/Team-Clean.css">
-    <link rel="stylesheet" href="<?php echo $pageStyle ?>assets/css/Team-Grid.css">
-    <link rel="stylesheet" href="<?php echo $pageStyle ?>assets/css/Team-one-B4-1.css">
-    <link rel="stylesheet" href="<?php echo $pageStyle ?>assets/css/Team-one-B4.css">
     
 </head>

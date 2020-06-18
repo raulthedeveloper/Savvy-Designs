@@ -8,7 +8,7 @@
    
    
     <div class="photo-gallery">
-        <div class="container">
+        <div class="container pt-5 pb-5">
             <div class="row photos">
                 <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="work-item.php"><img class="img-fluid" data-bs-hover-animate="pulse" src="../assets/img/recent1.jpeg"></a>
                     <h6 class="text-center" style="font-family: 'Advent Pro', sans-serif;">West Main</h6>

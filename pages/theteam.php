@@ -3,7 +3,7 @@
 
  <?php include '../includes/header.php' ?>
    
-    <section class="home-team">
+    <section class="home-team pt-5 pb-5">
         <h1 class="text-center secondary-headers">Meet the Team</h1>
         <div class="container">
             <div class="row">
