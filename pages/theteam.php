@@ -8,6 +8,7 @@
 <!-- echo "id: " . $row["team_ID"]. " - Name: " . $row["team_name"]. " " . $row["team_title"]. " " . $row["team_title"]. " " . $row["team_image"]. "<br>"; -->
 
 
+
 <section class="home-team pt-5 pb-5">
     <h1 class="text-center secondary-headers">Meet the Team</h1>
     <div class="container">
@@ -15,13 +16,18 @@
 
             <?php
  
+
  if (mysqli_num_rows($result) > 0) {
     // output data of each row
-    while($row = mysqli_fetch_assoc($result)) {?>
+    while($row = mysqli_fetch_assoc($result)) {
+        $image = $row["team_image"];
+       
+        ?>
+
             <div class="col-md-6 col-lg-3">
                 <div class="card card-style2 team-card">
-                    <div class="card_img"><img class="img-fluid img-full loaded" data-original="img/"
-                            data-was-processed="true" src="../assets/img/<?php echo $row["team_image"];?>"
+                    <div class="card_img"><img class="img-fluid img-full loaded" height="400" data-original="img/"
+                            data-was-processed="true" src="../assets/img/<?php echo $image;?>"
                             alt="Team one">
                         <div class="hover-overlay effect-scale"><a class="overlay_icon" target="_blank"
                                 href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a><a

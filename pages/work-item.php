@@ -13,7 +13,7 @@
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolores, ipsam cupiditate accusantium quam adipisci eum voluptate ut aut recusandae, non maiores, incidunt at labore id! Magni adipisci, sunt facere!</p>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolores, ipsam cupiditate accusantium quam adipisci eum voluptate ut aut recusandae, non maiores, incidunt at labore id! Magni adipisci, sunt facere!</p>
                   
-                  <button class="btn-success">Read More</button>
+                 <button onclick="window.location.href='learn_more.php';" class="btn-success">Read More</button>
               </div>
           </div>
           <div class="col-md-7">
