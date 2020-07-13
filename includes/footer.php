@@ -12,7 +12,7 @@
                 <div class="col-sm-6 col-md-3 item">
                     <h3>About</h3>
                     <ul>
-                        <li><a class="nav-link" href="<?php echo $nav_links; ?>edit.php" style="color: rgb(246,249,252);font-family: 'Advent Pro', sans-serif;">Edit</a></li>
+                        <li><a class="nav-link" href="<?php echo $nav_links; ?>../admin/index.php" style="color: rgb(246,249,252);font-family: 'Advent Pro', sans-serif;">Edit</a></li>
                         <li><a href="#">Team</a></li>
                         <li><a href="#">Careers</a></li>
                     </ul>

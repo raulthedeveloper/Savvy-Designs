@@ -1,40 +1,39 @@
-<?php $title = "Edit";?>
 <?php $page ='secondary' ?>
+<?php include '../assets/functions/db.php'; ?>
 
-<?php include '../assets/functions/db.php' ?>
+<?php include 'includes/header.php' ?>
 
-<?php include '../includes/header.php' ?>
-
+<h1 class="text-center">Add Abililty to switch from work items to employee</h1>
 <div class="container pt-5 pb-5">
     <div class="row">
         <div class="col">
             <h1>Add</h1>
+            
+
+
             <form>
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Title</label>
+                    <label for="exampleInputEmail1">Job Title</label>
                     <input type="text" class="form-control" id="exampleInputEmail1" name="item_title" aria-describedby="emailHelp">
 
                 </div>
+
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Image 1</label>
+                    <label for="exampleInputEmail1">Name</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" name="item_title" aria-describedby="emailHelp">
+
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Profile Picture</label>
                     <input type="url" class="form-control" aria-describedby="emailHelp" name="item_img1"
                         placeholder="paste in image url">
 
                 </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Image 2</label>
-                    <input type="url" class="form-control" aria-describedby="emailHelp"
-                        placeholder="paste in image url" name="item_img2">
 
-                </div>
+                
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Image 3</label>
-                    <input type="url" class="form-control" aria-describedby="emailHelp"
-                        placeholder="paste in image url" name="item_img3">
-
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Property Description</label>
+                    <label for="exampleInputEmail1">Member Description</label>
                     <input type="textarea" class="form-control" cols="50" rows="5" aria-describedby="emailHelp">
 
                 </div>
@@ -73,4 +72,4 @@
 </div>
 </div>
 
-<?php include '../includes/footer.php'?>
+<?php include './includes/footer.php'; ?>

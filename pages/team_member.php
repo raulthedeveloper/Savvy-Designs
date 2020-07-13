@@ -37,7 +37,7 @@ $page ='secondary';
         <div class="container">
             <div class="row" id="team_row">
                 <div class="col">
-                    <img class="img-fluid img-full loaded" data-original="img/<?php echo $image; ?>" data-was-processed="true" src="../assets/img/<?php echo $image; ?>" alt="Team one">
+                    <img class="img-fluid img-full loaded" data-original="img/<?php echo $image; ?>" data-was-processed="true" src="<?php echo $image; ?>" alt="Team one">
                 </div>
                 <div class="col"><h1><?php echo $name; ?></h1>
                 <p><?php echo $description ?></p>

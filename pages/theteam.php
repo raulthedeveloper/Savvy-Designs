@@ -27,7 +27,7 @@
             <div class="col-md-6 col-lg-3">
                 <div class="card card-style2 team-card">
                     <div class="card_img"><img class="img-fluid img-full loaded" height="400" data-original="img/"
-                            data-was-processed="true" src="../assets/img/<?php echo $image;?>"
+                            data-was-processed="true" src="<?php echo $image;?>"
                             alt="Team one">
                         <div class="hover-overlay effect-scale"><a class="overlay_icon" target="_blank"
                                 href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a><a

@@ -17,6 +17,7 @@
                         <li class="nav-item" role="presentation"><a class="nav-link" href="<?php echo $nav_links; ?>work.php" style="color: rgb(246,249,252);font-family: 'Advent Pro', sans-serif;">Work</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="<?php echo $nav_links; ?>theteam.php" style="color: rgb(248,250,252);font-family: 'Advent Pro', sans-serif;">Team</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="../index.php#contactForm" style="color: rgb(248,250,252);font-family: 'Advent Pro', sans-serif;">Contact</a></li>
+                        <li><a class="nav-link" href="<?php echo $nav_links; ?>../admin/index.php" style="color: rgb(246,249,252);font-family: 'Advent Pro', sans-serif;">Edit</a></li>
                     </ul>
                 </div>
             </div>
