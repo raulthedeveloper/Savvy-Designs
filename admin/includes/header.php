@@ -27,9 +27,13 @@
     <div class="bg-light border-right" id="sidebar-wrapper">
       <div class="sidebar-heading">Start Bootstrap </div>
       <div class="list-group list-group-flush">
+      <a href="sign_in.php" class="list-group-item list-group-item-action bg-light">Sign In</a>
         <a href="index.php" class="list-group-item list-group-item-action bg-light">Dashboard</a>
         <a href="edit_work_items.php" class="list-group-item list-group-item-action bg-light">Edit Work Items</a>
         <a href="edit_team.php" class="list-group-item list-group-item-action bg-light">Edit Team</a>
+        <a href="display_info.php" class="list-group-item list-group-item-action bg-light">Display Info</a>
+
+
       
       </div>
     </div>
