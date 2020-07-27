@@ -960,7 +960,8 @@ a:hover {
 
 .w-100 {
   width: 100% !important;
-  height: 60vh;
+  max-height: 420px;
+  min-height: 500px;
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {

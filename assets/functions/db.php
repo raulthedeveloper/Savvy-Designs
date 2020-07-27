@@ -1,7 +1,8 @@
-<?
 
+
+<?php
 $servername = "localhost";
-$username = "root";
+$username = "admin";
 $password = "";
 $database = "savvy_design";
 
@@ -14,10 +15,6 @@ if (!$conn) {
 }
 
 
-
-$sql = "SELECT team_ID, team_image, team_name, team_title, team_description FROM team";
+$sql = "SELECT team_ID, team_image,team_name,team_title,team_description FROM team;";
 $result = mysqli_query($conn, $sql);
-
-
-
 ?>
