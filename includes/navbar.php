@@ -12,12 +12,11 @@
                <i class="material-icons" data-bs-hover-animate="jello" style="font-size: 58px;margin-bottom: 0px;padding: 0px;">home</i></a>
                <a href="../index.php"><h1 id="savvy">Savvy Designs</h1></a> <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-1">
-                    <ul class="nav navbar-nav ml-auto">
-                        
+                    <ul class="nav navbar-nav ml-auto">    
                         <li class="nav-item" role="presentation"><a class="nav-link" href="<?php echo $nav_links; ?>work.php" style="color: rgb(246,249,252);font-family: 'Advent Pro', sans-serif;">Work</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="<?php echo $nav_links; ?>theteam.php" style="color: rgb(248,250,252);font-family: 'Advent Pro', sans-serif;">Team</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="../index.php#contactForm" style="color: rgb(248,250,252);font-family: 'Advent Pro', sans-serif;">Contact</a></li>
-                        <li><a class="nav-link" href="<?php echo $nav_links; ?>../admin/index.php" style="color: rgb(246,249,252);font-family: 'Advent Pro', sans-serif;">Edit</a></li>
+                        
                     </ul>
                 </div>
             </div>

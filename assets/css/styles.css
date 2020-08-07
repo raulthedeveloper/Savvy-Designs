@@ -1117,4 +1117,41 @@ button:hover {
   margin-top: -5px
 }
 
-/*# sourceMappingURL=styles.css.map */
+
+
+#work_grid img{
+  width: 100%;
+  min-height: 500px;
+}
+
+.text-box{
+  padding:10em;
+}
+
+#work_grid .col-md-6{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+
+
+#item_section .col-lg-12{
+  width: 100%;
+  padding:0;
+}
+
+#item_section .col-lg-12 img{
+  width: 100%;
+  height: 900px;
+}
+
+#item_section .col-md-6 img{
+  width: 100%;
+  height: 500px;
+}
+
+
+#item_section .col-md-6 {
+  padding: 0;
+}

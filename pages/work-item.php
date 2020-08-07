@@ -1,13 +1,26 @@
   <?php $title = "Main Street Place";?>
   <?php $page ='secondary' ?>
   <?php include '../assets/functions/db.php'; ?>
-  <?php include '../includes/header.php'?>
+
 
   <?php 
 
-
+    $title = '';
+    $img1 = '';
+    $img2 = '';
+    $img3 = '';
+    $description = '';
 
 if(null !== $_GET['id']){
+
+  if($_GET['id'] == 'test'){
+    $title =  "Example Item";
+    $img1 = "Images/placeholder.png";
+    $img2 = "Images/placeholder.png";
+    $img3 = "Images/placeholder.png";
+    $description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+
+  }else{
 
     $ID = mysqli_real_escape_string($conn, $_GET['id']);
 
@@ -17,13 +30,16 @@ if(null !== $_GET['id']){
 
     $row = mysqli_fetch_array($result);
 
+    $title =  $row['work_title'];
+    $img1 = $row['work_img_1'];
+    $img2 = $row['work_img_2'];
+    $img3 = $row['work_img_3'];
+    $img4 = $row['work_img_4'];
+    $description = $row['work_description'];
+
+  }
 }
 
-$title =  $row['work_title'];
-$img1 = $row['work_img_1'];
-$img2 = $row['work_img_2'];
-$img3 = $row['work_img_3'];
-$description = $row['work_description'];
 
 
 $page ='secondary';
@@ -31,60 +47,59 @@ $page ='secondary';
 ?>
 
 
+<?php include '../includes/header.php'?>
 
 
-
-  <div class="container pb-5" id="work_item_container">
-
-    <div class="row">
-
-      <div class="col-md-5">
-        <div class="work_text">
-          <h2><?php echo $title; ?></h2>
-          <p><?php echo $description; ?></p>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="<?php echo $_GET['src'] === 'index' ? '../index.php#more_work' : 'work.php' ?>">Go Back</a></li>
+    <li class="breadcrumb-item active" aria-current="page"><?php echo $title; ?></li>
+  </ol>
+</nav>
 
 
-          <button onclick="window.location.href='learn_more.php';" class="btn-success">Contact Me</button>
-        </div>
+<section id="item_section">
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="text-box">
+      <h1 class="text-center"><?php echo !$result ? 'Connect to Database' : $title ?></h1>
+      <p class="text-center"><?php echo $description ?></p>
       </div>
-      <div class="col-md-7">
 
-        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="<?php echo $img1; ?>" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="<?php echo $img2 ?>" class="d-block w-100" alt="...">
-            </div>
-
-            <div class="carousel-item">
-              <img src="<?php echo $img3 ?>" class="d-block w-100" alt="...">
-            </div>
-
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-
-
-
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12"><img class="img-fluid" src="<?php echo $page === 'secondary' ? '../' : ''?><?php echo $img1; ?>" alt=""></div>
+  </div>
+  <div class="row">
+    <div class="col-md-6"><img class="img-fluid" src="<?php echo $page === 'secondary' ? '../' : ''?><?php echo $img2; ?>" alt=""></div>
+    <div class="col-md-6"><img class="img-fluid" src="<?php echo $page === 'secondary' ? '../' : ''?><?php echo $img3; ?>" alt=""></div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-12">
+    <div class="text-box">
+      <h1 class="text-center"><?php echo !$result ? 'Connect to Database' : "Custom Title" ?></h1>
+      <p class="text-center"><?php echo $description ?></p>
       </div>
     </div>
 
-
-
+    
   </div>
+  <div class="row">
+    <div class="col-lg-12"><img class="img-fluid" src="<?php echo $page === 'secondary' ? '../' : ''?><?php echo $img4; ?>" alt=""></div>
+
+</div>
+  </section>
+
+
+
+ 
+
+
+  
+
+
   <?php mysqli_close($conn); ?>
   <?php include '../includes/footer.php'?>

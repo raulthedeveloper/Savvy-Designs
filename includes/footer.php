@@ -29,10 +29,9 @@
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/bs-init.js"></script>
-<script src="assets/js/Contact-Form-v2-Modal--Full-with-Google-Map.js"></script>
+<script src="<?php echo $page === 'secondary' ? '../' : '' ?>assets/js/bs-init.js"></script>
+<script src="<?php echo $page === 'secondary' ? '../' : '' ?>assets/js/Contact-Form-v2-Modal--Full-with-Google-Map.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
-<script src="script.js"></script>
 </body>
 
 </html>

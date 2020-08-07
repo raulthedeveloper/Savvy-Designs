@@ -1,6 +1,5 @@
-
-
 <?php
+
 $servername = "localhost";
 $username = "admin";
 $password = "";
@@ -15,6 +14,6 @@ if (!$conn) {
 }
 
 
-$sql = "SELECT team_ID, team_image,team_name,team_title,team_description FROM team;";
+$sql = "SELECT team_ID, team_image,team_name,team_title,team_description FROM team";
 $result = mysqli_query($conn, $sql);
 ?>
