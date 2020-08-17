@@ -12,7 +12,6 @@
                 <div class="col-sm-6 col-md-3 item">
                     <h3>About</h3>
                     <ul>
-                        <li><a class="nav-link" href="<?php echo $nav_links; ?>../admin/index.php" style="color: rgb(246,249,252);font-family: 'Advent Pro', sans-serif;">Edit</a></li>
                         <li><a href="#">Team</a></li>
                         <li><a href="#">Careers</a></li>
                     </ul>
@@ -27,11 +26,32 @@
         </div>
     </footer>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+
+<?php
+
+    if($page == 'index'){
+        echo '<script src="assets/js/Contact-Form-v2-Modal--Full-with-Google-Map.js"></script>';
+    }
+
+?>
+
+
+
+
 <script src="<?php echo $page === 'secondary' ? '../' : '' ?>assets/js/bs-init.js"></script>
-<script src="<?php echo $page === 'secondary' ? '../' : '' ?>assets/js/Contact-Form-v2-Modal--Full-with-Google-Map.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+      once:true,
+      duration:1500
+  });
+
+
+
+</script>
 </body>
 
 </html>

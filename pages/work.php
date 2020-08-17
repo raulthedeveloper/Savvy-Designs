@@ -1,7 +1,7 @@
   <?php $title = "Our Work";?>
   <?php include '../assets/functions/db.php'; ?>
 
-  <?php $page ='secondary' ?>
+  <?php $page ='secondary' ;?>
 
 
 
@@ -12,7 +12,7 @@
 
   <div class="photo-gallery">
       <div class="container pt-5 pb-5">
-          <div class="row photos">
+          <div class="row photos" data-aos="fade">
 
               <?php
  
@@ -39,11 +39,18 @@ else if(mysqli_num_rows($result) > 0){
   
         ?>
 
-              <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="work-item.php?id=<?php echo $row["work_ID"] ?>&src=work"><img
-                          class="img-fluid" data-bs-hover-animate="pulse" src="<?php echo $page === 'secondary' ? '../' : ''?><?php echo  $row['work_img_1']; ?>"></a>
-                  <h6 class="text-center" style="font-family: 'Advent Pro', sans-serif;">
-                      <?php echo $row['work_title'] ?></h6>
-              </div>
+<div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+
+<div class="view overlay">
+<a href="work-item.php?id=<?php echo $row["work_ID"] ?>&src=work"><img
+  class="img-fluid"  src="<?php echo $page === 'secondary' ? '../' : ''?><?php echo  $row['work_img_1']; ?>"></a>
+  <div class="mask flex-center rgba-red-light">
+    <p class="white-text"><?php echo $row['work_title'] ?></p>
+  </div>
+</div>
+
+</div>
+
               <?php }
 
     }
@@ -56,4 +63,7 @@ else if(mysqli_num_rows($result) > 0){
           </div>
           
       </div>
+      
+      <?php $page ='work' ?>
+      <?php mysqli_close($conn); ?>
       <?php include '../includes/footer.php'?>

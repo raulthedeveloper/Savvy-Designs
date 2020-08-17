@@ -60,26 +60,26 @@ $page ='secondary';
 
 <section id="item_section">
   <div class="container-fluid">
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="text-box">
+  <div class="row" data-aos="fade" data-aos-anchor-placement="center" data-aos-duration="1500">
+    <div class="col-lg-12 p-5">
+      <div class="p-5">
       <h1 class="text-center"><?php echo !$result ? 'Connect to Database' : $title ?></h1>
       <p class="text-center"><?php echo $description ?></p>
       </div>
 
     </div>
   </div>
-  <div class="row">
+  <div class="row" data-aos="fade" data-aos-anchor-placement="center" data-aos-duration="1500">
     <div class="col-lg-12"><img class="img-fluid" src="<?php echo $page === 'secondary' ? '../' : ''?><?php echo $img1; ?>" alt=""></div>
   </div>
-  <div class="row">
+  <div class="row" data-aos="fade" data-aos-anchor-placement="center" data-aos-duration="1500">
     <div class="col-md-6"><img class="img-fluid" src="<?php echo $page === 'secondary' ? '../' : ''?><?php echo $img2; ?>" alt=""></div>
     <div class="col-md-6"><img class="img-fluid" src="<?php echo $page === 'secondary' ? '../' : ''?><?php echo $img3; ?>" alt=""></div>
   </div>
   
-  <div class="row">
-    <div class="col-md-12">
-    <div class="text-box">
+  <div class="row" data-aos="fade" data-aos-anchor-placement="center" data-aos-duration="1500">
+    <div class="col-md-12 p-5">
+    <div class="p-5">
       <h1 class="text-center"><?php echo !$result ? 'Connect to Database' : "Custom Title" ?></h1>
       <p class="text-center"><?php echo $description ?></p>
       </div>
@@ -87,7 +87,7 @@ $page ='secondary';
 
     
   </div>
-  <div class="row">
+  <div class="row" data-aos="fade" data-aos-anchor-placement="center" data-aos-duration="1500">
     <div class="col-lg-12"><img class="img-fluid" src="<?php echo $page === 'secondary' ? '../' : ''?><?php echo $img4; ?>" alt=""></div>
 
 </div>

@@ -53,14 +53,20 @@ if(null !== $_GET['id']){
    
     <section id="team_member_section">
         <div class="container pt-5 pb-5">
-            <div class="row" id="team_row">
-                <div class="col">
+            <div class="row" id="team_row" data-aos="fade-up">
+                <div class="col-md-6 col-sm-12 pb-sm-4">
                     <img class="img-fluid img-full loaded" data-original="img/<?php echo $image; ?>" data-was-processed="true" src="<?php echo $image; ?>" alt="Team one">
                 </div>
-                <div class="col"><h1><?php echo $name; ?></h1>
+                <div class="col-md-6 col-sm-12"><h1><?php echo $name; ?></h1>
                 <p><?php echo $description ?></p>
                 
-                <?php include "../includes/have_any_question.php";?>
+                <hr>
+                <h2>Have any questions?</h2>
+                <ul class="d-inline-flex pt-4">
+                    <li><a href="mailto:Example@email.com"><img src="https://img.icons8.com/ios/40/000000/composing-mail.png"></a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/"><img src="https://img.icons8.com/ios-filled/40/000000/facebook-new.png"></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/"><img src="https://img.icons8.com/ios-glyphs/40/000000/instagram-new.png"></a></li>
+                </ul>
                 </div>
             </div>
         </div>
