@@ -28,16 +28,6 @@
 </div>
 
 
-<?php
-
-    if($page == 'index'){
-        echo '<script src="assets/js/Contact-Form-v2-Modal--Full-with-Google-Map.js"></script>';
-    }
-
-?>
-
-
-
 
 <script src="<?php echo $page === 'secondary' ? '../' : '' ?>assets/js/bs-init.js"></script>
 

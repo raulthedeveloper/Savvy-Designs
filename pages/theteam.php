@@ -57,7 +57,7 @@ if(!$result){
                     <div class="card_img"><img class="img-fluid img-full loaded" height="400" data-original="img/"
                             data-was-processed="true" src="<?php echo $image;?>" alt="Team one">
 
-                        <div class="hover-overlay effect-scale">
+                       <div class="hover-overlay effect-scale">
                                 <a class="overlay_icon" target="_blank" href="https://www.facebook.com/"><i
                                         class="fa fa-facebook"></i></a>
 
@@ -66,7 +66,7 @@ if(!$result){
                                 </a>
                                 <a class="overlay_icon" target="_blank" href="https://www.linkedin.com/"><i
                                         class="fa fa-linkedin"></i></a></div>
-                    </div>
+                    </div> 
 
                     <div class="card-block">
                         <h4 class="card-title"><a

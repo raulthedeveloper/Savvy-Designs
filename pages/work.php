@@ -41,12 +41,13 @@ else if(mysqli_num_rows($result) > 0){
 
 <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
 
-<div class="view overlay">
-<a href="work-item.php?id=<?php echo $row["work_ID"] ?>&src=work"><img
-  class="img-fluid"  src="<?php echo $page === 'secondary' ? '../' : ''?><?php echo  $row['work_img_1']; ?>"></a>
-  <div class="mask flex-center rgba-red-light">
-    <p class="white-text"><?php echo $row['work_title'] ?></p>
-  </div>
+<div class="view overlay m-2">
+<a href="work-item.php?id=<?php echo $row["work_ID"] ?>&src=work">
+<img class="img-fluid image"  src="<?php echo $page === 'secondary' ? '../' : ''?><?php echo  $row['work_img_1']; ?>" width="400" height="300"></a>
+  
+  <div class="middle">
+    <div class="text"><?php echo $row['work_title'] ?></div>
+  </div>  
 </div>
 
 </div>
@@ -65,5 +66,7 @@ else if(mysqli_num_rows($result) > 0){
       </div>
       
       <?php $page ='work' ?>
+
       <?php mysqli_close($conn); ?>
+      
       <?php include '../includes/footer.php'?>

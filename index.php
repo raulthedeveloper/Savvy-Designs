@@ -50,8 +50,8 @@
 
 
  if (!$result) { ?>
-            <div class="row">
-                <div class="col-md-6 bg-light ">
+            <div class="row"> 
+                <div class="col-md-6 col-sm-12 bg-light ">
                     <div class="d-block m-auto text-box">
                         <h2>Connect to Database</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt suscipit dolore, rerum
@@ -67,7 +67,7 @@
                         More</button>
 
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-12">
                     <img class="img-fluid" src="Images/placeholder.png" alt="">
                 </div>
             </div>
@@ -75,7 +75,7 @@
                 <div class="col-md-6">
                     <img class="img-fluid" src="Images/placeholder.png" alt="">
                 </div>
-                <div class="col-md-6 bg-light pb-md-4">
+                <div class="col-md-6 col-sm-12 bg-light pb-md-4">
                     <div class="d-block m-auto text-box">
                         <h2>Connect to Database</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt suscipit dolore, rerum
@@ -121,22 +121,24 @@ else if(mysqli_num_rows($result) > 0){
         
         if($even_row){ ?>
 
-        <div class="row" data-aos="fade" data-aos-anchor-placement="center" data-aos-duration="1500">
-            <div class="col-md-6 bg-light order-sm-12 order-md-1 pb-sm-5">
+        <div class="row even" data-aos="fade" data-aos-anchor-placement="center" data-aos-duration="1500">
+            <div class="col-md-6 col-sm-12 bg-light  pb-sm-5 overlay">
                 <div class="d-block m-auto text-box">
                     <h2><?php echo $title ?></h2>
                     <p><?php echo $description; ?>
                     </p>
                 </div>
-                <a href="pages/work-item.php?src=index&id=<?php echo $id ?>"><button
-                        class="btn btn-dark btn-lg text-justify  d-flex text-light  mt-4 d-block m-auto">See
-                        More</button></a>
 
             </div>
 
 
-            <div class="col-md-6 order-md-12" >
-                <img class="img-fluid" src="<?php echo $img; ?>" alt="">
+            <div class="col-md-6 col-sm-12  overlay">
+                <a href="pages/work-item.php?src=index&id=<?php echo $id ?>"><img class="img-fluid image"
+                        src="<?php echo $img; ?>" alt="">
+                    <div class="middle">
+                        <div class="text">Click to Learn More</div>
+                    </div>
+                </a>
             </div>
         </div>
 
@@ -148,10 +150,18 @@ else if(mysqli_num_rows($result) > 0){
         }else if(!$even_row){?>
 
         <div class="row" data-aos="fade" data-aos-anchor-placement="center" data-aos-duration="1500">
-            <div class="col-md-6 order-md-1">
-                <img class="img-fluid" src="<?php echo $img; ?>" alt="">
+
+            <div class="col-md-6 col-sm-12  overlay ">
+                <a href="pages/work-item.php?src=index&id=<?php echo $id ?>"> <img class="img-fluid image"
+                        src="<?php echo $img; ?>" alt="">
+                    <div class="middle">
+                        <div class="text">Click to Learn More</div>
+                    </div>
+                </a>
             </div>
-            <div class="col-md-6 bg-light order-md-12 pb-sm-5">
+
+
+            <div class="col-md-6 col-sm-12 bg-light  pb-sm-5">
                 <div class="d-block m-auto text-box">
                     <h2>
                         <?php echo $title ?>
@@ -159,9 +169,6 @@ else if(mysqli_num_rows($result) > 0){
                     <p><?php echo $description ?>
                     </p>
                 </div>
-                <a href="pages/work-item.php?src=index&id=<?php echo $id ?>"><button
-                        class="btn btn-dark btn-lg text-justify  d-flex text-light  mt-4 d-block m-auto">See
-                        More</button></a>
 
             </div>
 
@@ -225,6 +232,7 @@ else if(mysqli_num_rows($result) > 0){
         </div>
     </section>
 
+
     <section id="contact" class="pb-4">
         <div class="container" id="contact_container">
             <div class="row">
@@ -255,8 +263,7 @@ else if(mysqli_num_rows($result) > 0){
         </div>
         </div>
 
-        <a id="back-to-top" href="index.php#hero">Back to top<i
-                class="fa fa-arrow-circle-up pl-1"></i></a>
+        <a id="back-to-top" href="index.php#hero">Back to top<i class="fa fa-arrow-circle-up pl-1"></i></a>
         </div>
     </section>
     <?php mysqli_close($conn); ?>

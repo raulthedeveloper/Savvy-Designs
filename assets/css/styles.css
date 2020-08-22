@@ -4,7 +4,7 @@ ul {
 
 h1,a{
   font-family: 'Advent Pro', sans-serif;
-  padding-top: 1em;
+ 
 }
 
 
@@ -759,6 +759,8 @@ h6 {
   left: 0;
   right: 0;
   bottom: 0;
+ 
+  
 }
 
 .hover-overlay a.overlay_icon {
@@ -976,7 +978,7 @@ button:hover {
 
 .testimonials-clean {
   color: #313437;
-  background-color: #eef4f7
+  background-color: #e3e4e7
 }
 
 .testimonials-clean p {
@@ -1073,7 +1075,11 @@ button:hover {
 #work_grid img{
   width: 100%;
   min-height: 500px;
+ 
 }
+
+
+
 
 .text-box{
     padding-top: 15%;
@@ -1107,4 +1113,52 @@ button:hover {
 
 #item_section .col-md-6 {
   padding: 0;
+}
+
+.overlay{
+  background: rgba(0, 0, 0, .75);
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay:hover .image {
+  opacity: 0.5;
+}
+
+.overlay:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 35px;
+}
+
+#work_grid img{
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 765px) {
+  .even {
+    flex-direction: column-reverse;
+  }
 }

@@ -10,7 +10,7 @@
            <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background-color: rgba(255, 255, 255, 0.15);">
             <div class="container"><a class="navbar-brand text-left" href="../index.php" style="font-size: 30px;font-family: 'Advent Pro', sans-serif;">
                
-               <i class="material-icons" data-bs-hover-animate="jello" style="font-size: 58px;margin-bottom: 0px;padding: 0px;">home</i></a>
+               
                <a href="../index.php"><h1 id="savvy">Savvy Designs</h1></a> <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav ml-auto">    
