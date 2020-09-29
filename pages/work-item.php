@@ -61,8 +61,8 @@ $page ='secondary';
 <section id="item_section">
   <div class="container-fluid">
   <div class="row" data-aos="fade" data-aos-anchor-placement="center" data-aos-duration="1500">
-    <div class="col-lg-12 p-5">
-      <div class="p-5">
+    <div class="col-lg-12  p-4">
+      <div class="text-box-2">
       <h1 class="text-center"><?php echo !$result ? 'Connect to Database' : $title ?></h1>
       <p class="text-center"><?php echo $description ?></p>
       </div>
@@ -78,8 +78,8 @@ $page ='secondary';
   </div>
   
   <div class="row" data-aos="fade" data-aos-anchor-placement="center" data-aos-duration="1500">
-    <div class="col-md-12 p-5">
-    <div class="p-5">
+    <div class="col-md-12 p-4">
+    <div class="text-box-2">
       <h1 class="text-center"><?php echo !$result ? 'Connect to Database' : "Custom Title" ?></h1>
       <p class="text-center"><?php echo $description ?></p>
       </div>

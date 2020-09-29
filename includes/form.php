@@ -1,19 +1,19 @@
 <?php 
 
-if(isset($_POST['submit'])){
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone'];     
-    $time_to_call = $_POST['call_time'];
-    $comments = $_POST['comments'];
+// if(isset($_POST['submit'])){
+//     $name = $_POST['name'];
+//     $email = $_POST['email'];
+//     $phone = $_POST['phone'];     
+//     $time_to_call = $_POST['call_time'];
+//     $comments = $_POST['comments'];
 
-    echo $name . "<br>". $email ."<br>". $phone ."<br>". $time_to_call ."<br>". $comments;
+//     echo $name . "<br>". $email ."<br>". $phone ."<br>". $time_to_call ."<br>". $comments;
 
-    $query = "INSERT INTO prospect_emails(full_name,email,phone,time_to_call,comments) VALUES ('{$name}','{$email}',$phone,'{$time_to_call}','{$comments}');";    
-    $insert_query = mysqli_query($conn, $query) or die(mysqli_error($conn));
+//     $query = "INSERT INTO prospect_emails(full_name,email,phone,time_to_call,comments) VALUES ('{$name}','{$email}',$phone,'{$time_to_call}','{$comments}');";    
+//     $insert_query = mysqli_query($conn, $query) or die(mysqli_error($conn));
     
 
-}
+// }
 
 
 ?>

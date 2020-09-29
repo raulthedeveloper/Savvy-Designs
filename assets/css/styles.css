@@ -81,7 +81,7 @@ h6 {
 
 #hero {
   width: 100%;
-  height: 80vh;
+  min-height: 800px;
   background: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.5)), url("../../assets/img/pexels-photo-279719.jpeg");
   background-position: center;
   background-size: cover;
@@ -96,7 +96,15 @@ h6 {
   }
 }
 
+.text-box-2{
+  padding: 60px;
+}
 
+@media only screen and (max-width: 550px){
+  .text-box-2{
+    padding: 20px;
+  }
+}
 
 #header-box {
   display: block;
@@ -1102,13 +1110,18 @@ button:hover {
 
 #item_section .col-lg-12 img{
   width: 100%;
-  height: 900px;
+  max-height: 900px;
+  min-height: 550px;
 }
 
 #item_section .col-md-6 img{
   width: 100%;
-  height: 500px;
+  max-height: 900px;
+  min-height: 550px;
 }
+
+
+
 
 
 #item_section .col-md-6 {
