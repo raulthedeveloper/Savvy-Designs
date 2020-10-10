@@ -3,7 +3,11 @@
 
 <?php include '../assets/functions/db.php'; ?>
 
-<?php include '../includes/header.php';  ?>
+<?php include '../includes/header.php';  
+
+$sql = "SELECT * FROM team";
+$result = mysqli_query($conn, $sql);
+?>
 
 
 

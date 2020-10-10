@@ -4,7 +4,7 @@
 $servername = "localhost";
 $username = "raultper_siabo";
 $password = "P9!%gvrDTG%n";
-$database = "raultper_portfolio";
+$database = "raultper_savy_design";
 
 
 // Create connection
