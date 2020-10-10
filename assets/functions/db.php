@@ -1,9 +1,14 @@
 <?php
 
 $servername = "localhost";
-$username = "admin";
-$password = "";
-$database = "savvy_design";
+$username = "raultper_siabo";
+$password = "P9!%gvrDTG%n";
+$database = "raultper_savy_design";
+
+// $servername = "localhost";
+// $username = "admin";
+// $password = "";
+// $database = "savvy_design";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $database);
@@ -14,6 +19,6 @@ if (!$conn) {
 }
 
 
-$sql = "SELECT team_ID, team_image,team_name,team_title,team_description FROM team";
+$sql = "SELECT * FROM team";
 $result = mysqli_query($conn, $sql);
 ?>

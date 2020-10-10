@@ -1,18 +1,18 @@
   <?php $title = "Our Work";?>
-  <?php include '../assets/functions/db.php'; ?>
+  <?php $page ='secondary'; ?>
 
-  <?php $page ='secondary' ;?>
+<?php include '../assets/functions/db.php'; ?>
+
+<?php include '../includes/header.php';  ?>
 
 
 
-
-  <?php include '../includes/header.php'?>
 
   <h1 class="text-center pt-4"><?php echo !$result ? 'Connect Database to see work items' : "" ?></h1>
 
-  <div class="photo-gallery">
+  <div class="photo-gallery" data-aos="fade">
       <div class="container pt-5 pb-5">
-          <div class="row photos" data-aos="fade">
+          <div class="row photos">
 
               <?php
  
@@ -20,7 +20,7 @@
  if (!$result) {
     for($i = 0; $i < 8; $i++){?>
         <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="work-item.php?id=test&src=work&src=work"><img
-                          class="img-fluid" data-bs-hover-animate="pulse" src="../Images/placeholder.png"></a>
+                          class="img-fluid"  src="../Images/placeholder.png"></a>
                   <h6 class="text-center" style="font-family: 'Advent Pro', sans-serif;">
                       Work Item</h6>
               </div>
@@ -65,7 +65,6 @@ else if(mysqli_num_rows($result) > 0){
           
       </div>
       
-      <?php $page ='work' ?>
 
       <?php mysqli_close($conn); ?>
       

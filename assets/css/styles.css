@@ -1114,10 +1114,20 @@ button:hover {
   min-height: 550px;
 }
 
+@media only screen and (max-width: 730px){
+  #item_section .col-lg-12 img{
+    width: 100%;
+    height: 100%;
+    max-height: initial;
+  min-height: initial;
+    
+  }
+}
+
 #item_section .col-md-6 img{
   width: 100%;
-  max-height: 900px;
-  min-height: 550px;
+  height: 100%;
+  
 }
 
 
