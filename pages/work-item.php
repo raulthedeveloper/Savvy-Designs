@@ -1,18 +1,37 @@
-  <?php $title = "Main Street Place";?>
-  <?php $page ='secondary' ?>
-  <?php include '../assets/functions/db.php'; ?>
-
-
   <?php 
+  
+  
+   $title = "Main Street Place";
+   $page ='secondary';
 
-    $title = '';
-    $img1 = '';
-    $img2 = '';
-    $img3 = '';
-    $description = '';
+   include '../assets/functions/db.php'; 
+
+
+  
+
+$backupData = array(
+  "title"=>"Example Item",
+  "img1"=>"Images/placeholder.png",
+  "img2"=>"Images/placeholder.png",
+  "img3"=>"Images/placeholder.png",
+  "description"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+);
+
+$test = ['hello','how','now'];
+
+$db->route($resultArr = $test,$router = true);
+
+
+$title = '';
+$img1 = '';
+$img2 = '';
+$img3 = '';
+$description = '';
+
+
 
 if(null !== $_GET['id']){
-
+////// Backup if database fails /////////
   if($_GET['id'] == 'test'){
     $title =  "Example Item";
     $img1 = "Images/placeholder.png";
@@ -21,7 +40,7 @@ if(null !== $_GET['id']){
     $description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
 
   }else{
-
+    
     $ID = mysqli_real_escape_string($conn, $_GET['id']);
 
     $sql = "SELECT * FROM work_items WHERE work_ID='$ID' ";
@@ -39,6 +58,8 @@ if(null !== $_GET['id']){
 
   }
 }
+
+
 
 
 
