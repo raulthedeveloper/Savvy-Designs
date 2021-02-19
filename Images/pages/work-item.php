@@ -41,6 +41,8 @@ if(null !== $_GET['id']){
 }
 
 
+$data = $db->route();
+
 
 $page ='secondary';
 
@@ -53,7 +55,7 @@ $page ='secondary';
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="<?php echo $_GET['src'] === 'index' ? '../index.php#more_work' : 'work.php' ?>">Go Back</a></li>
-    <li class="breadcrumb-item active" aria-current="page"><?php echo $title; ?></li>
+    <li class="breadcrumb-item active" aria-current="page"><?php echo $data['work_title']; ?></li>
   </ol>
 </nav>
 

@@ -1,12 +1,16 @@
-<?php $title = "Our Team";?>
-<?php $page ='secondary'; ?>
+<?php $title = "Our Team";
 
-<?php include '../assets/functions/db.php'; ?>
+ $page ='secondary'; 
 
-<?php include '../includes/header.php';  
+ include '../assets/functions/db.php'; 
 
-$sql = "SELECT * FROM team";
-$result = mysqli_query($conn, $sql);
+ include '../includes/header.php';  
+
+
+$db->setTable("team");
+
+$result = $db->makeQuery();
+
 ?>
 
 
@@ -95,5 +99,4 @@ if(!$result){
 
         </div>
 </section>
-<?php mysqli_close($conn); ?>
 <?php include '../includes/footer.php'?>

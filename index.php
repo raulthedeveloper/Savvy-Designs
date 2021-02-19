@@ -51,7 +51,7 @@
 
  if (!$result) { ?>
             <div class="row"> 
-                <div class="col-md-6 col-sm-12 bg-light ">
+                <div class="col-md-6 col-sm-12 bg-light pb-md-4">
                     <div class="d-block m-auto text-box">
                         <h2>Connect to Database</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt suscipit dolore, rerum
@@ -62,9 +62,9 @@
                             perferendis minus, neque corrupti sed laboriosam?
                         </p>
                     </div>
-                    <button
-                        class="btn btn-lg text-justify border border-dark d-flex text-light  mt-4 d-block m-auto">See
-                        More</button>
+                    <a href="pages/work-item.php?src=index&id=<?php echo $id ?>"><button
+                            class="btn btn-dark btn-lg text-justify  d-flex text-light  mt-4 d-block m-auto">See
+                            More</button></a>
 
                 </div>
                 <div class="col-md-6 col-sm-12">
@@ -100,15 +100,16 @@
  
 else if(mysqli_num_rows($result) > 0){
   
-
-// output data of each row
-    $sql = "SELECT work_ID, work_title, work_img_1, work_description FROM work_items;";
-    $result = mysqli_query($conn, $sql);
+    
+ 
     $even_row = False;
 
 
     for ($i = 0; $i < 4; $i++) {
+        global $result;
+
         $row = mysqli_fetch_assoc($result);
+
         $title = $row['work_title'];
         $img = $row['work_img_1'];
         $id= $row['work_ID'];
@@ -266,5 +267,4 @@ else if(mysqli_num_rows($result) > 0){
         <a id="back-to-top" href="index.php#hero">Back to top<i class="fa fa-arrow-circle-up pl-1"></i></a>
         </div>
     </section>
-    <?php mysqli_close($conn); ?>
     <?php include 'includes/footer.php'?>

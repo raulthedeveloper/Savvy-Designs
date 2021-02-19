@@ -32,8 +32,7 @@ else if(mysqli_num_rows($result) > 0){
   
 
 // output data of each row
-    $sql = "SELECT work_ID, work_title, work_img_1 FROM work_items;";
-    $result = mysqli_query($conn, $sql);
+   global $result;
 
     while($row = mysqli_fetch_assoc($result)) {
   
@@ -52,20 +51,16 @@ else if(mysqli_num_rows($result) > 0){
 
 </div>
 
-              <?php }
+        <?php }
 
     }
  ?>
 
   
-
-
-
           </div>
           
       </div>
       
 
-      <?php mysqli_close($conn); ?>
       
       <?php include '../includes/footer.php'?>
